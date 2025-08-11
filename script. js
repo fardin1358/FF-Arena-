@@ -1,0 +1,11 @@
+fetch('tournaments.json')
+    .then(res => res.json())
+    .then(data => {
+        let container = document.getElementById('tournaments');
+        data.forEach(t => {
+            let div = document.createElement('div');
+            div.classList.add('tournament');
+            div.innerHTML = `<h3>${t.name}</h3><p>ফি: ${t.fee} টাকা</p><p>প্রাইজ: ${t.prize} টাকা</p>`;
+            container.appendChild(div);
+        });
+    });
