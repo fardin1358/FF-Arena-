@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#tournament-list {
+    padding: 20px;
+}
+.tournament {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
